@@ -14,6 +14,7 @@
 
 // smooth scroll
 $(document).ready(function(){
+    bootstrap.Collapse(menuToggle)
     $(".navbar .nav-link").on('click', function(event) {
 
         if (this.hash !== "") {
