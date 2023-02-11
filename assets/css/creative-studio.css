@@ -11049,6 +11049,11 @@ p {
   margin-right:25px;
 }
 
+.mb-4-card-alt {
+  margin-bottom: 0px !important;
+  margin-right:25px;
+}
+
 .bg-primary .navbar-brand,
 .bg-secondary .navbar-brand,
 .bg-success .navbar-brand,
@@ -11130,7 +11135,7 @@ p {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 2px solid #141414;
+  border: 2px solid #f0f0f0;
   text-align: center;
   padding-top: 40px;
   position: relative;
@@ -11140,7 +11145,7 @@ p {
   content: "\e649";
   font-family: 'themify';
   font-size: 12px;
-  color: #00008b;
+  color: #f0f0f0;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -11154,7 +11159,7 @@ p {
 }
 
 .widget .widget-item i {
-  color: #141414;
+  color: #f0f0f0;
   font-size: 40px;
   display: block;
   margin-bottom: 25px;
@@ -11303,7 +11308,7 @@ p {
 }
 
 .box {
-  background: rgba(200, 200, 200, .8);
+  background: rgba(255, 255, 255, .8);
   border-radius: 0.15rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11317,11 +11322,12 @@ p {
   width: 95%;
   max-width: 1050px;
   margin: auto;
-  box-shadow: 2px 0 10px rgba(255, 255, 255, 1);
-  margin-top: -140px;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, .9);
+  margin-top: 0px;
   z-index: 99;
   position: relative;
   max-height: 300px;
+  border-radius: 20px;
 }
 
 .box .box-item {
@@ -11755,7 +11761,7 @@ pre .code {
 }
 
 .footer .logo img {
-  width: 35px;
+  width: 40%;
 }
 
 .footer .logo h6 {
@@ -11944,11 +11950,11 @@ html {
 }
 
 section {
-  padding: 100px 0;
+  padding: 0px 0px;
 }
 
 section:nth-child(odd) {
-  background-color: #fbfcfc;
+  background-color: #141414;
 }
 
 section.py-sm,
@@ -11958,13 +11964,13 @@ section .py-sm {
 
 section.py-md,
 section .py-md {
-  padding: 60px 0 !important;
+  padding: 200px 0 !important;
 }
 
 section.has-bg-img {
-  background: rgba(200, 200, 200,.6);
+  background: rgba(100, 100, 100,.2);
   position: relative;
-  color: #141414;
+  color: #f0f0f0;
 }
 
 section.has-bg-img:after {
@@ -11974,7 +11980,7 @@ section.has-bg-img:after {
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../imgs/section.jpg);
+  background-image: url(../imgs/section.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -11988,6 +11994,12 @@ section.has-bg-img.bg-img-1:after {
 
 section.has-bg-img.bg-img-2:after {
   background-image: url(../imgs/header.jpg);
+}
+
+section.has-bg-img.bg-img-3:after {
+  background-image: url(../imgs/logo.png);
+  background-size: 100%;
+  margin-top: -100%;
 }
 
 section .section-subtitle {
