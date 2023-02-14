@@ -160,13 +160,13 @@ sup {
 }
 
 a {
-  color: #ff214f;
+  color: #fff;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #d4002c;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -2233,9 +2233,9 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #141414;
-  border-color: #ffa1b4;
+  border-color: #fff;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 33, 79, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(17, 203, 236, 0.774);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -11423,7 +11423,7 @@ p {
   font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));
   display: block;
   margin-bottom: 30px;
-  color: #ff214f;
+  color:#92d7e7;
   -webkit-transition: all, 0.3;
   transition: all, 0.3;
 }
@@ -11551,7 +11551,7 @@ p {
 .contact-card .infos {
   padding: 0 40px;
   min-width: 400px;
-  border-right: 1px solid #eaf0fc;
+  border-right: 1px solid #fff;
 }
 
 .contact-card .infos .item {
@@ -11559,7 +11559,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #eaf0fc;
+  border-bottom: 1px solid #fff;
   margin-top: 20px;
   padding-bottom: 20px;
 }
@@ -11580,7 +11580,7 @@ p {
   display: block;
   width: 30px;
   font-size: 30px;
-  color: #ff214f;
+  color: #92d7e7;
   margin: 4px 20px 0 0;
 }
 
