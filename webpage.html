@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is a prototype website.">
     <meta name="author" content="inovrse">
     <title>inovrse</title>
@@ -61,26 +61,29 @@
     <!-- End Of Page Navigation -->
 
     <!-- Page Header -->
-    <header class="header" style="margin-bottom:200px;" >
-        <div class="overlay">
-            <h1 style="font-size:500%; font-family:monospace; font-weight:bold; margin-top:100px">VR|AR</h1>
-            <h6 style="font-size:200%; font-family:monospace; text-align:center; margin-top:15px; margin-bottom:150px;">DISCOVER THE POWER OF INOVRSE TECHNOLOGY FOR YOUR BUSINESS</h6>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="assets/imgs/WEBM.webm">
+        </video>
+        <div class="overlay-webm">
+            <h1 style="font-size:500%; font-family:monospace; font-weight:bold;">VR|AR</h1>
+            <h6 style="font-size:200%; font-family:monospace;">DISCOVER THE POWER OF INOVRSE TECHNOLOGY FOR YOUR BUSINESS</h6>
             <!-- <h1 class="title">inovrse</h1> -->
-            <div class="buttons text-center">
-                <a href="#contact" class="btn btn-primary rounded w-lg btn-lg my-1" style="font-family:monospace; font-weight:bold">REQUEST DEMO</a>
-            </div>              
-        </div>      
-    </header>
+        </div>
+        <div class="overlay-webm">
+            <a href="#contact" class="btn btn-primary rounded" style="font-family:monospace; font-weight:bold">REQUEST DEMO</a>
+        </div>              
+    </div>      
     <!-- End Of Page Header -->
 
     <!-- About Section -->
     <section id="about">
-        <div style="padding: 100px 0 100px; margin-top: -200px;" class="container">
-            <div class="row align-items-center">
+        <div style="padding: 250px 0 100px; margin-top: -200px;" class="container">
+            <div class="row">
                 <div class="col-md-5 col-lg-4">
-                    <img src="assets/imgs/team-photo.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page" class="w-100 img-thumbnail mb-3">
+                    <img src="assets/imgs/team-photo.png" style="width:auto; max-width:30vh; height:auto;">
                 </div>
-                <div class="col-md-7 col-lg-8">
+                <div class="col-md-6 col-lg-8">
                     <h6 class="section-title mb-0">Empower Your Business</h6>
                     <h6 class="section-title mb-3">with Inovrse</h6>
                     <p>Say goodbye to limitations and hello to unlimited possibilities with our full-service VR/AR solutions. Our team of experts is dedicated to delivering tailored simulations, insightful analytics, and efficient storage to help you take your business to the next level.</p>
@@ -145,8 +148,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6-card-left">
-                    <div class="card mb-4-card-alt">
+                <div class="col-sm-4">
+                    <div class="card mb-4-card">
                         <div class="card-body">
                             <h2 class="mb-4"><i class="ti-pie-chart text-primary"></i></h2>
                             <h6 class="card-title">Analytics and Optimization</h6>
@@ -154,8 +157,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6-card-right">
-                    <div class="card mb-4-card-alt">
+                <div class="col-sm-4-alt">
+                    <div class="card mb-4-card">
                         <div class="card-body">
                             <h2 class="mb-4"><i class="ti-headphone text-primary"></i></h2>
                             <h6 class="card-title">Ongoing Support</h6>
