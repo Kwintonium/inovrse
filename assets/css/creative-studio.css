@@ -11976,7 +11976,7 @@ section .py-md {
 }
 
 section.has-bg-img {
-  background: rgba(100, 100, 100,.2);
+  background: rgba(10, 10, 10,.8);
   position: relative;
   color: #f0f0f0;
 }
@@ -11988,7 +11988,7 @@ section.has-bg-img:after {
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../imgs/section.png);
+  background-image: url(../imgs/background.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -12058,7 +12058,7 @@ section.has-bg-img.bg-img-2:after {
 }
 
 section.has-bg-img.bg-img-3:after {
-  background-image: url(../imgs/logo.png);
+  background-image: url(../imgs/logo_high_quality.png);
   background-size: 100%;
   margin-top: -100%;
 }
