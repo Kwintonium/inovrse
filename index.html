@@ -1,13 +1,617 @@
-<html>
-    <head>
-        <title>Enter Login</title>
-        <h1>Development Under Progress</h1>
-        <script src="alert.js"></script>
-    <head>
-    <body>
-        <form class="passform" action="webpage.html" onsubmit="return passcheck()">
-            Password: <input type="password" required id="pass1">
-            <input type="submit">
-        </form>
-    </body>
+<!DOCTYPE html>
+<!--https://www.free-css.com/free-css-templates/page286/creative-studio-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a prototype website.">
+    <meta name="author" content="inovrse">
+    <title>inovrse</title>
+    <link rel="icon" stype="image/x-icon" href="/assets/imgs/logo_tab_.png">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Creative Studio main styles -->
+	<link rel="stylesheet" href="assets/css/creative-studio.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo_high_quality.png" alt="inovrse">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">Testimonial</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary-nav btn-sm ml-lg-3" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Page Navigation -->
+
+    <!-- Page Header -->
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="assets/imgs/WEBM.webm">
+        </video>
+        <div class="overlay-webm">
+            <h1 style="font-size:500%; font-family:monospace; font-weight:bold;">VR|AR</h1>
+            <h6 style="font-size:200%; font-family:monospace;">DISCOVER THE POWER OF INOVRSE TECHNOLOGY FOR YOUR BUSINESS</h6>
+            <!-- <h1 class="title">inovrse</h1> -->
+        </div>
+        <div class="overlay-webm">
+            <a href="#contact" class="btn btn-primary rounded" style="font-family:monospace; font-weight:bold">REQUEST DEMO</a>
+        </div>              
+    </div>      
+    <!-- End Of Page Header -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div style="padding: 250px 0 100px; margin-top: -200px;" class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/team-photo.png" style="width:auto; max-width:30vh; height:auto;">
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <h6 class="section-title mb-0">Empower Your Business</h6>
+                    <h6 class="section-title mb-3">with Inovrse</h6>
+                    <p>Say goodbye to limitations and hello to unlimited possibilities with our full-service VR/AR solutions. Our team of experts is dedicated to delivering tailored simulations, insightful analytics, and efficient storage to help you take your business to the next level.</p>
+                    <p>At Inovrse, we believe that VR/AR technology should be accessible to everyone, which is why we strive to provide innovative solutions that help businesses achieve their goals. Whether you're seeking to improve operations, engage customers, or just simply stay ahead of the curve, we have the expertise and passion to help you succeed.</p>
+                    <p>Join us on a journey to the infinite and see what Inovrse can do for you. Request a demo today and let's turn your vision into a reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Box -->
+    <div style="margin-top:-50px" class="box text-center">
+        <div class="box-item">
+            <i class="ti-vector"></i>
+            <h6 class="box-title">Simulations</h6>
+            <p >Experience your business processes like never before with VR simulations tailored to your specific needs.</p>
+        </div>
+        <div class="box-item">
+            <i class="ti-bar-chart"></i>
+            <h6 class="box-title">Analytics</h6>
+            <p>Gain a competitive edge with data-driven insights on how to optimize your business operations.</p>
+        </div>
+        <div class="box-item">
+            <i class="ti-clipboard"></i>
+            <h6 class="box-title">Consulting</h6>
+            <p>Future-proof your business with VR/AR consulting expertise.<br></br></p>
+        </div>
+    </div>
+    <!-- End of Box -->
+
+    <!-- Service Section -->
+    <section id="service" style="padding:100px 0px 100px" class="has-bg-img">
+        <div class="container">
+            <h6 class="section-subtitle text-center">The Service Journey</h6>
+            <h5 class="section-title text-center mb-6">Lifecycle</h5> 
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card mb-4-card">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-pencil-alt text-primary"></i></h2>
+                            <h6 class="card-title">Strategic Planning</h6>
+                            <p>Our experts will work with you to create a customized and data-driven strategy to achieve your business goals through VR/AR technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-4-card">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-paint-roller text-primary"></i></h2>
+                            <h6 class="card-title">Design</h6>
+                            <p>From ideation to deployment, our team will use their expertise to design and create an immersive and interactive VR/AR experience that appeals to your target audience and supports your business objectives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-4-card">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-rocket text-primary"></i></h2>
+                            <h6 class="card-title">Deployment and Implementation</h6>
+                            <p>Leave it to us to execute the deployment of your VR/AR project, ensuring a smooth and seamless transition with minimum disruptions to your business operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-4-card">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-pie-chart text-primary"></i></h2>
+                            <h6 class="card-title">Analytics and Optimization</h6>
+                            <p>Our VR/AR solutions come with built-in analytics tools that will provide you with real-time insights into usage patterns and user engagement, allowing you to make data-driven decisions to optimize your VR/AR experience and achieve maximum ROI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4-alt">
+                    <div class="card mb-4-card">
+                        <div class="card-body">
+                            <h2 class="mb-4"><i class="ti-headphone text-primary"></i></h2>
+                            <h6 class="card-title">Ongoing Support</h6>
+                            <p>Our dedicated support team will be with you every step of the way, ensuring that your VR/AR solution remains effective and efficient, and addressing any issues that may arise to keep your business running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- End of Service Section -->
+
+    <!-- Portfolio section -->
+    <!-- Commented out for now -->
+    <!-- <section id="portfolio">
+        <div class="container text-center">
+            <h6 class="section-subtitle">Our Awesome Works</h6>
+            <h6 class="section-title mb-5">Our Portfolio</h6>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-4.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-5.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-6.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End of portfolio section -->
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h6 style="padding-top:100px;" class="section-title mb-5 text-center">Meet the Team</h6>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/LONN.jpg">
+                        <div class="card-body">
+                            <h6 class="small text-primary font-weight-bold">CEO/Founder</h6>
+                            <h5 class="card-title"><b>Lonn Meyer</b></h5>
+                            <p>My passion for technology and prior experience in product management in mobile gaming and the auto industry drives me to lead our team into delivering exceptional solutions for our clients. I ensure the smooth operation of the company, maintain relationships with stakeholders, and make high-level decisions to drive growth and success. I am committed to delivering the best results for our clients and providing them with the highest level of service and satisfaction.</p>
+                            <!-- EXAMPLE FOR FUTURE: SOCIALS <div class="socials">
+                                <a href="javascript:void(0)"><i class="ti-facebook"></i> </a>
+                                <a href="javascript:void(0)"><i class="ti-github"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-dropbox"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/JAYMES.jpg">
+                        <div class="card-body">
+                            <h6 class="small text-primary font-weight-bold">Director of Marketing and Sales</h6>
+                            <h5 class="card-title"><b>Jaymes Caldwell</b></h5>
+                            <p>I drive growth and revenue for our VR consulting firm by securing new clients and opportunities. I use my interpersonal skills and market knowledge to build strong relationships and negotiate successful deals. I am dedicated to providing top-notch VR solutions to meet the needs and exceed expectations of our clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/JULIEN.jpg">
+                        <div class="card-body">
+                            <h6 class="small text-primary font-weight-bold">Technical Artist and Producer</h6>
+                            <h5 class="card-title"><b>Julien Reneaud</b></h5>
+                            <p>I create high-quality visual content for our VR simulations and UI. My attention to detail and ability to create visually appealing content ensure a seamless and immersive user experience for our clients. My collaboration with the team and focus on meeting technical requirements helps drive the overall success of our VR training simulations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/MIGAMAL.jpg">
+                        <div class="card-body">
+                            <h6 class="small text-primary font-weight-bold">Senior Developer</h6>
+                            <h5 class="card-title"><b>Miguel Murphy</b></h5>
+                            <p>I bring a unique blend of technical know-how and gaming passion to Inovrse's VR team. With experience in both gaming development and as a gamer myself, I am dedicated to creating immersive 3D worlds that truly bring your vision to life. Let's work together to bring your VR dreams to the next reality!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/QUINN.png">
+                        <div class="card-body">
+                            <h6 class="small text-primary font-weight-bold">Data Scientist</h6>
+                            <h5 class="card-title"><b>Quinn Meyer</b></h5>
+                            <p>As a data scientist with a background in software engineering & optics, I help bring your business data to life in our virtual experiences. Whether it's by integrating your systems or analyzing areas for efficiency improvement, I'm committed to creating top-notch data-driven VR simulations for our clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top inset" src="assets/imgs/GUY.jpg">
+                        <div class="card-body">
+                            <h6 class="small text-primary font-weight-bold">Digital Marketing Manager</h6>
+                            <h5 class="card-title"><b>Josh Triplett</b></h5>
+                            <p>I bring passion, enthusiasm and a proven track record in digital marketing to my role as Inovrse's Digital Marketing Manager. I excel in building strong client relationships and utilizing my analytical skills to drive revenue growth through targeted marketing strategies. Let's work together to increase your brand awareness and generate leads. Click the contact button and get in touch with me now!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Team Section -->
+
+    <!-- Facts Section -->
+    <!-- Commented out for now -->
+    <!-- <section class="has-bg-img bg-img-2">
+        <div class="container text-center">
+            <h6 class="section-subtitle">We Are Awesome</h6>
+            <h6 class="section-title mb-6">Some Fun Fucts</h6>
+                <div class="widget-2">
+                    <div class="widget-item">
+                        <i class="ti-cup"></i>
+                        <h6 class="title">100+</h6>
+                        <div class="subtitle">Awards Won</div>
+                    </div>
+                    <div class="widget-item">
+                        <i class="ti-face-smile"></i>
+                        <h6 class="title">100+</h6>
+                        <div class="subtitle">Happy Clients</div>
+                    </div>
+                    <div class="widget-item">
+                        <i class="ti-blackboard"></i>
+                        <h6 class="title">845+</h6>
+                        <div class="subtitle">Project Completed</div>
+                    </div>
+                    <div class="widget-item">
+                        <i class="ti-comments-smiley"></i>
+                        <h6 class="title">15K+</h6>
+                        <div class="subtitle">Comments</div>
+                    </div>
+                </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonial Section -->
+    <!-- Commented out for now -->
+    <!-- <section id="testimonial">
+        <div class="container">
+            <h6 class="section-subtitle text-center">Testimonial</h6>
+            <h6 class="section-title text-center mb-6">What Our Clients Says</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-wrapper">
+                        <div class="img-holder">
+                            <img src="assets/imgs/avatar-5.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">                     
+                        </div>
+                        <div class="body">
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="title">Richard Reb</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-wrapper">
+                        <div class="img-holder">
+                            <img src="assets/imgs/avatar-6.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">                     
+                        </div>
+                        <div class="body">
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="title">John Doe</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End of Testimonial Section -->
+
+    <!-- Video Section -->
+    <!-- Commented out for now (recomment "button trigger modal") -->
+    <!-- <section class="has-bg-img py-lg">
+        <div class="container text-center">
+
+            Button trigger modal
+            <button type="button" class="btn btn-outline-primary play-control" data-toggle="modal" data-target="#exampleModalCenter">
+              <i class="ti-control-play" ></i>
+            </button>
+            <h6 class="section-title mt-4">See Our Intro Video</h6>
+
+        </div>
+    </section> -->
+    <!-- End of Video Section -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <iframe width="100%" height="475" src="https://www.youtube.com/embed/TP4THzsAa3M" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- end of modal -->
+
+    <!-- Blog Section -->
+    <!-- Commented out for now -->
+    <!-- <section id="blog">
+        <div class="container">
+            <h6 class="section-subtitle text-center">News Feeds</h6>
+            <h6 class="section-title mb-6 text-center">Our Blog</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card blog-post my-4 my-sm-5 my-md-0">
+                        <img src="assets/imgs/blog-1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="card-body">
+                            <div class="details mb-3">
+                                <a href="javascript:void(0)"><i class="ti-comments"></i> 123</a>
+                                <a href="javascript:void(0)"><i class="ti-eye"></i> 123</a>
+                            </div>
+                            <h5 class="card-title">Possimus aliquam veniam</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-post my-4 my-sm-5 my-md-0">
+                        <img src="assets/imgs/blog-2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="card-body">
+                            <div class="details mb-3">
+                                <a href="javascript:void(0)"><i class="ti-comments"></i> 434</a>
+                                <a href="javascript:void(0)"><i class="ti-eye"></i> 987</a>
+                            </div>
+                            <h5 class="card-title">Repudiandae laudantium</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-post my-4 my-sm-5 my-md-0">
+                        <img src="assets/imgs/blog-3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="card-body">
+                            <div class="details mb-3">
+                                <a href="javascript:void(0)"><i class="ti-comments"></i> 164</a>
+                                <a href="javascript:void(0)"><i class="ti-eye"></i> 425</a>
+                            </div>
+                            <h5 class="card-title">Laboriosam asperiores</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End of Blog Section -->
+
+    <!-- Contact Section -->
+    <section style="padding-top:50px" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="infos">
+                    <h6 class="section-title mb-4">Contact Us</h6>
+
+                    <div class="item">
+                        <i class="ti-location-pin"></i>
+                        <div class="">
+                            <h5>Locations</h5>
+                            <p> Detroit, MI</p>
+                            <p> Atlanta, GA</p>
+                            <p> Buffalo, NY</p>
+                            <p> Los Angeles, CA</p>
+                        </div>                          
+                    </div>
+                    <div class="item">
+                        <i class="ti-mobile"></i>
+                        <div>
+                            <h5>Phone Number</h5>
+                            <p>(770) 744-4026</p>
+                        </div>                          
+                    </div>
+                    <div class="item">
+                        <i class="ti-email"></i>
+                        <div class="mb-0">
+                            <h5>Email Address</h5>
+                            <p>support@inovrse.com</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                            <a href="https://www.facebook.com/profile.php?id=100089960037144"><i class="ti-facebook"></i> </a>
+                            <!-- <a href="javascript:void(0)"><i class="ti-github"></i></a>
+                            <a href="javascript:void(0)"><i class="ti-dropbox"></i></a> -->
+                            <a href="https://twitter.com/InoVRseSupport"><i class="ti-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="form">
+                    <h6 class="section-subtitle">Transform Your Reality with Expert VR Consultation</h6>
+                    <h6 class="section-title mb-4">Get Started Now</h6>
+                    <form method="post" action="https://formsubmit.co/support@inovrse.com">
+                        <div class="form-group">
+                            <input name="Name:" type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="Email:" type="email" class="form-control form-control-lg" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="Phone Number:" type="text" class="form-control form-control-lg" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="Company:" type="text" class="form-control form-control-lg" placeholder="Company" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Contact-Message:" id="" cols="30" rows="7" class="form-control form-control-lg" placeholder="Tell Us About Your Project"></textarea>
+                        </div>
+                        <button type="submit" value="Send" class="btn btn-primary btn-block btn-lg mt-3">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <br></br>
+        <p style="text-align: center;"> <a href="/webpage.html"> <img style="width:10%" src="assets/imgs/logo_high_quality.png"> </a> | <a style="color: #9febef" href="Privacy_Policy.pdf">Inovrse Privacy Policy</a> | Ⓒ2023 Inovrse. All Rights Reserved.</p>
+    </div>
+    <!-- Contact Section (Commented out for now)-->
+    <!-- <section class="py-0">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-lists">
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">ABOUT US</h6>
+                        </li>
+                        <li class="list-body">
+                            <a href="#" class="logo">
+                                <img src="assets/imgs/logo.png">
+                                <h6>Creative Studio</h6>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti minus optio accusamus, quam maiores explicabo sunt.</p> 
+                            <p class="mt-3">
+                                Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a class="d-inline text-primary" href="http://www.devcrud.com">DevCRUD</a>
+                            </p>                   
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">USEFUL LINKS</h6>
+                        </li>
+                        <li class="list-body">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#about">About</a>
+                                    <a href="#service">Service</a>
+                                    <a href="#portfolio">Portfolio</a>
+                                    <a href="#testmonail">Testimonial</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#team">Team</a>
+                                    <a href="#blog">Blog</a>
+                                    <a href="#">Faq</a>
+                                    <a href="#">Privacy Policy</a>                  
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">CONTACT INFO</h6>
+                        </li>
+                        <li class="list-body">
+                            <p>Contact us and we'll get back to you within 24 hours.</p>
+                            <p><i class="ti-location-pin"></i> 12345 Fake ST NoWhere AB Country</p>
+                            <p><i class="ti-email"></i>  info@website.com</p>
+                            <div class="social-links">
+                                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </section> -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Studio js -->
+    <script src="assets/js/creative-studio.js"></script>
+
+</body>
 </html>
